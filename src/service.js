@@ -1,11 +1,12 @@
-require ('dotenv').config();
+require('dotenv').config();
 const app = require('./app.js');
 const favicon = require('serve-favicon');
-consst path = require('path');
+const path = require('path');
 
 const PORT = process.env.PORT || 3000
 app.use(favicon(path.join(__dirname, '../public', 'favicon.ico')))
 
 app.listen(PORT, () => {
-console.log(`https server listening on port ${PORT}`)
-{); 
+    console.log(`http server listening on port ${PORT}`)
+}); 
+
